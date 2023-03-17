@@ -1,0 +1,205 @@
+body{
+  margin: 0;
+}
+
+header{
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  background-color:azure;
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr;
+  /* add flex to the 2fr section so the hover to change color can be applied without using paddingon each of the elements */
+}
+
+.brandNameDiv,
+.productType,
+.myCartLink{
+  text-align: center;
+}
+
+.brandName{
+  font-family: 'roboto';
+  font-size: larger;
+}
+
+.productType{
+  display: flex;
+  justify-content: space-around;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a p{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.myCartLink:hover,
+.productLink:hover{
+  background-color:aliceblue;
+}
+
+
+
+
+
+
+
+
+
+.section1{
+  margin-top: 100px;
+  position: relative;
+}
+
+#introImages{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.imgIntro{
+  width: 100%;
+}
+
+.ivyFashionStoreDiv{
+  width: 40%;
+  position: absolute;
+  bottom: 250px;
+  left: 30px;
+  /* border-radius: 50px; */
+}
+
+.ivyFashionStore{
+  text-align: center;
+  background-color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+.unisexShoesDiv{
+  width: 30%;
+}
+
+.unisexShoes{
+  text-align: center;
+  background-color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+.productsSection{
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  position: relative;
+}
+
+.productPreview{
+  padding: 10px;
+  position: relative;
+}
+
+.productPreview:hover{
+  border-style: solid;
+  border-color: black;
+  border-width: 0.5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 0.2s;
+  padding: 1px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.productImage{
+  width: 100%;
+}
+
+.productDetails{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.productPrice,
+.productName{
+  margin: 0px;
+}
+
+.productName{
+  font-family:'Times New Roman', Times, serif;
+  font-size: large;
+  font-weight: 400 ;
+}
+
+.productName:hover{
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 600;
+  transition: 0.15s;
+}
+
+.productPrice{
+  font-family: roboto;
+  font-size: large;
+  font-weight: 800;
+}
+
+.cartBtns{
+ display: flex;
+ justify-content: end;
+}
+
+.addBtn{
+  width: 70px;
+  height: 25px;
+  background-color: rgba(255, 0, 0, 0.926);
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(0, 177, 0, 0.878);
+  position: absolute;
+  bottom: 50px;
+  right: 44px;
+  /* padding: 5 10px; */
+}
+
+.addBtn:hover{
+  opacity: 0.8;
+  width: 80px;
+  box-shadow: -5px 5px 3px rgba(0, 0, 0, 0.3);
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+.addBtn:active{
+  opacity: 0.5;
+  transition: 0.15s;
+}
+
+
